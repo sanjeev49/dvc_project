@@ -1,56 +1,8 @@
-[2022-06-21 14:24:28,342: INFO: stage_00_template]: 
+[2022-06-21 18:38:38,687: INFO: stage_00_template]: 
 ********************
-[2022-06-21 14:24:28,342: INFO: stage_00_template]: >>>>> stage prepare_data started <<<<<
-[2022-06-21 14:24:28,349: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-06-21 14:24:28,352: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-06-21 14:24:28,352: ERROR: stage_00_template]: 'NoneType' object is not subscriptable
-Traceback (most recent call last):
-  File "d:/work/dvc_project/src/stage_00_template.py", line 48, in <module>
-    main(config_path=parsed_args.config, params_path=parsed_args.params)
-  File "d:/work/dvc_project/src/stage_00_template.py", line 28, in main
-    split = params["prepare"]["split"] # split ration
-TypeError: 'NoneType' object is not subscriptable
-[2022-06-21 14:25:16,628: INFO: stage_00_template]: 
-********************
-[2022-06-21 14:25:16,628: INFO: stage_00_template]: >>>>> stage prepare_data started <<<<<
-[2022-06-21 14:25:16,628: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-06-21 14:25:16,628: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-06-21 14:25:16,628: ERROR: stage_00_template]: 'NoneType' object is not subscriptable
-Traceback (most recent call last):
-  File ".\src\stage_00_template.py", line 48, in <module>
-    main(config_path=parsed_args.config, params_path=parsed_args.params)
-  File ".\src\stage_00_template.py", line 28, in main
-    split = params["prepare"]["split"] # split ration
-TypeError: 'NoneType' object is not subscriptable
-[2022-06-21 14:25:48,388: INFO: stage_00_template]: 
-********************
-[2022-06-21 14:25:48,388: INFO: stage_00_template]: >>>>> stage prepare_data started <<<<<
-[2022-06-21 14:25:48,391: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-06-21 14:25:48,391: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-06-21 14:25:48,391: ERROR: stage_00_template]: 'NoneType' object is not subscriptable
-Traceback (most recent call last):
-  File ".\src\stage_00_template.py", line 49, in <module>
-    main(config_path=parsed_args.config, params_path=parsed_args.params)
-  File ".\src\stage_00_template.py", line 28, in main
-    split = params["prepare"]["split"] # split ration
-TypeError: 'NoneType' object is not subscriptable
-[2022-06-21 14:27:13,057: INFO: stage_00_template]: 
-********************
-[2022-06-21 14:27:13,057: INFO: stage_00_template]: >>>>> stage prepare_data started <<<<<
-[2022-06-21 14:27:13,057: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-06-21 14:27:13,057: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-06-21 14:27:13,057: ERROR: stage_00_template]: 'NoneType' object is not subscriptable
-Traceback (most recent call last):
-  File ".\src\stage_00_template.py", line 49, in <module>
-    main(config_path=parsed_args.config, params_path=parsed_args.params)
-  File ".\src\stage_00_template.py", line 28, in main
-    split = params["prepare"]["split"] # split ration
-TypeError: 'NoneType' object is not subscriptable
-[2022-06-21 14:27:41,992: INFO: stage_00_template]: 
-********************
-[2022-06-21 14:27:41,992: INFO: stage_00_template]: >>>>> stage prepare_data started <<<<<
-[2022-06-21 14:27:41,992: INFO: common]: yaml file: configs/config.yaml loaded successfully
-[2022-06-21 14:27:41,992: INFO: common]: yaml file: params.yaml loaded successfully
-[2022-06-21 14:27:41,992: INFO: common]: created directory at: artifacts\prepared
-[2022-06-21 14:27:41,992: INFO: stage_00_template]: >>>>> stage prepare_data completed!<<<<<
+[2022-06-21 18:38:38,687: INFO: stage_00_template]: >>>>> stage Prepare_data started <<<<<
+[2022-06-21 18:38:38,690: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-21 18:38:38,690: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-21 18:38:38,691: INFO: common]: created directory at: artifacts\prepared
+[2022-06-21 18:38:41,065: INFO: stage_00_template]: >>>>> stage Prepare_data completed!<<<<<
 
