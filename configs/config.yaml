@@ -19,13 +19,7 @@ plots:
   ROC:  roc.json
 
 source_data:
+  URL:  https://raw.githubusercontent.com/c17hawke/common-data-repo/main/data.xml
   data_dir: data
   data_file:  data.xml
 
-source_download_dirs:
-  - path_to_data_1
-  - path_to_data_1
-
-local_data_dirs:
-  - path_to_local_data_1
-  - path_to_local_data_2
