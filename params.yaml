@@ -4,3 +4,6 @@ prepare:
   seed: 2022
   tag:  <python>
 
+featurize:
+  max_features: 2500
+  ngrams:  2
