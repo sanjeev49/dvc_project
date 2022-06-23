@@ -48,7 +48,6 @@ stages:
       md5: 61a563eed1b0044192165f334b15afc1
       size: 2667
     outs:
-    - path: artifacts/model
-      md5: 762eeadafeba8d4d304048467dbc20be.dir
-      size: 3120261
-      nfiles: 1
+    - path: artifacts/model/model.pkl
+      md5: f532ed3f79ed7c30652033b870548856
+      size: 3130773

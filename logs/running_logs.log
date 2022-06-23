@@ -242,3 +242,36 @@ KeyError: 'n_jobs'
 [2022-06-23 12:04:08,998: INFO: stage_03_train]: Saved our model at: artifacts\model\model.pkl
 [2022-06-23 12:04:09,000: INFO: stage_03_train]: >>>>> stage STAGE_NAME completed!<<<<<
 
+[2022-06-23 12:12:43,244: INFO: stage_01_prepare_data]: 
+********************
+[2022-06-23 12:12:43,244: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-06-23 12:12:43,246: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:12:43,247: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:12:43,248: INFO: common]: created directory at: artifacts\prepared
+[2022-06-23 12:12:45,579: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-06-23 12:12:48,217: INFO: stage_02_featurization]: 
+********************
+[2022-06-23 12:12:48,217: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-23 12:12:48,218: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:12:48,220: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:12:48,220: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:12:49,110: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-23 12:13:04,920: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 2502)
+[2022-06-23 12:13:05,506: INFO: common]: The input data Frame artifacts\prepared\test.tsv size is (7464, 3) is created. 
+[2022-06-23 12:13:07,374: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 2502)
+[2022-06-23 12:13:07,655: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA completed!<<<<<
+
+[2022-06-23 12:13:10,513: INFO: stage_03_train]: 
+********************
+[2022-06-23 12:13:10,513: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 12:13:10,515: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:13:10,516: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:13:10,517: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:13:10,517: INFO: common]: created directory at: artifacts\model
+[2022-06-23 12:13:10,533: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 12:13:10,534: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 12:13:10,534: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 12:13:13,259: INFO: stage_03_train]: Saved our model at: artifacts\model\model.pkl
+[2022-06-23 12:13:13,261: INFO: stage_03_train]: >>>>> stage STAGE_NAME completed!<<<<<
+

@@ -24,4 +24,4 @@ stages:
     - src/stage_03_train.py
     - artifacts/features
     outs:
-    - artifacts/model
+    - artifacts/model/model.pkl
