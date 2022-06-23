@@ -7,5 +7,6 @@ PyYAML
 mkdocs-material
 joblib
 scipy
+sklearn
 ### local packages -
 # -e . # << uncomment this to install from setup.py

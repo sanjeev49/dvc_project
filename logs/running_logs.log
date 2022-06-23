@@ -30,3 +30,118 @@
 [2022-06-22 18:19:32,028: INFO: common]: created directory at: artifacts\prepared
 [2022-06-22 18:19:34,657: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
 
+[2022-06-22 20:27:19,981: INFO: stage_01_prepare_data]: 
+********************
+[2022-06-22 20:27:19,981: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-06-22 20:27:19,983: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:27:19,984: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:27:19,984: INFO: common]: created directory at: artifacts\prepared
+[2022-06-22 20:27:22,746: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-06-22 20:30:01,367: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:30:01,367: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:30:01,370: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:30:01,372: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:30:01,372: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:30:01,629: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17537, 3) is created. 
+[2022-06-22 20:30:01,630: ERROR: stage_02_featurization]: 'DataFrame' object has no attribute 'text'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 44, in main
+    train_words = np.array(df_train.text.str.lower().values.astype("U"))
+  File "D:\work\dvc_project\env\lib\site-packages\pandas\core\generic.py", line 5487, in __getattr__
+    return object.__getattribute__(self, name)
+AttributeError: 'DataFrame' object has no attribute 'text'
+[2022-06-22 20:35:04,133: INFO: stage_01_prepare_data]: 
+********************
+[2022-06-22 20:35:04,133: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data started <<<<<
+[2022-06-22 20:35:04,133: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:35:04,133: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:35:04,133: INFO: common]: created directory at: artifacts\prepared
+[2022-06-22 20:35:06,431: INFO: stage_01_prepare_data]: >>>>> stage Prepare_data completed!<<<<<
+
+[2022-06-22 20:35:16,482: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:35:16,482: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:35:16,482: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:35:16,482: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:35:16,482: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:35:17,342: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-22 20:35:23,293: ERROR: stage_02_featurization]: __init__() got an unexpected keyword argument 'n_grams'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 49, in main
+    n_grams=(1, n_grams)
+TypeError: __init__() got an unexpected keyword argument 'n_grams'
+[2022-06-22 20:35:48,586: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:35:48,586: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:35:48,601: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:35:48,601: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:35:48,601: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:35:48,601: ERROR: stage_02_featurization]: 'n_grams'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 41, in main
+    n_grams = params["featurize"]["n_grams"]
+KeyError: 'n_grams'
+[2022-06-22 20:36:14,397: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:36:14,397: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:36:14,397: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:36:14,397: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:36:14,397: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:36:14,584: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-22 20:36:16,965: ERROR: stage_02_featurization]: __init__() got an unexpected keyword argument 'n_grams'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 49, in main
+    n_grams=(1, n_grams)
+TypeError: __init__() got an unexpected keyword argument 'n_grams'
+[2022-06-22 20:37:06,954: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:37:06,954: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:37:06,954: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:37:06,954: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:37:06,954: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:37:07,166: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-22 20:37:17,840: ERROR: stage_02_featurization]: save_matrix() got an unexpected keyword argument 'matrix'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 58, in main
+    save_matrix(df = df_train, matrix = train_words_tfidf_matrix, out_path=featurized_train_data_path)
+TypeError: save_matrix() got an unexpected keyword argument 'matrix'
+[2022-06-22 20:57:17,835: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:57:17,836: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:57:17,838: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:57:17,838: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:57:17,839: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:57:18,097: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-22 20:57:33,042: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 2502)
+[2022-06-22 20:57:33,529: INFO: common]: The input data Frame artifacts\prepared\test.tsv size is (7464, 3) is created. 
+[2022-06-22 20:57:36,852: ERROR: stage_02_featurization]: save_matrix() got an unexpected keyword argument 'matrix'
+Traceback (most recent call last):
+  File ".\src\stage_02_featurization.py", line 85, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_02_featurization.py", line 69, in main
+    save_matrix(df = df_test, matrix=test_words_tfidf_matrix, out_path=featurized_test_data_path)
+TypeError: save_matrix() got an unexpected keyword argument 'matrix'
+[2022-06-22 20:57:58,300: INFO: stage_02_featurization]: 
+********************
+[2022-06-22 20:57:58,300: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA started <<<<<
+[2022-06-22 20:57:58,300: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-22 20:57:58,300: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-22 20:57:58,300: INFO: common]: created directory at: artifacts\features
+[2022-06-22 20:57:58,495: INFO: common]: The input data Frame artifacts\prepared\train.tsv size is (17536, 3) is created. 
+[2022-06-22 20:58:09,545: INFO: data_mgmt]: The output matrix saved at artifacts\features\train.pkl of shape: (17536, 2502)
+[2022-06-22 20:58:09,647: INFO: common]: The input data Frame artifacts\prepared\test.tsv size is (7464, 3) is created. 
+[2022-06-22 20:58:11,517: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 2502)
+[2022-06-22 20:58:11,821: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA completed!<<<<<
+
