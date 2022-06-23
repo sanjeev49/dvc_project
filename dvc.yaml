@@ -17,3 +17,11 @@ stages:
     - artifacts/prepared
     outs:
     - artifacts/features
+
+  model_trainning:
+    cmd:  python src/stage_03_train.py
+    deps:
+    - src/stage_03_train.py
+    - artifacts/features
+    outs:
+    - artifacts/model

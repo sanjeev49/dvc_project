@@ -165,3 +165,80 @@ TypeError: save_matrix() got an unexpected keyword argument 'matrix'
 [2022-06-23 11:36:39,229: INFO: data_mgmt]: The output matrix saved at artifacts\features\test.pkl of shape: (7464, 2502)
 [2022-06-23 11:36:39,528: INFO: stage_02_featurization]: >>>>> stage PREPARE_DATA completed!<<<<<
 
+[2022-06-23 11:59:53,245: INFO: stage_03_train]: 
+********************
+[2022-06-23 11:59:53,245: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 11:59:53,247: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 11:59:53,249: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 11:59:53,250: INFO: common]: created directory at: artifacts\features
+[2022-06-23 11:59:53,250: INFO: common]: created directory at: artifacts\model
+[2022-06-23 11:59:53,267: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 11:59:53,267: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 11:59:53,267: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 11:59:53,267: ERROR: stage_03_train]: 'n_jobs'
+Traceback (most recent call last):
+  File ".\src\stage_03_train.py", line 80, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_03_train.py", line 55, in main
+    n_jobs = params["train"]["n_jobs"]
+KeyError: 'n_jobs'
+[2022-06-23 12:00:17,565: INFO: stage_03_train]: 
+********************
+[2022-06-23 12:00:17,565: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 12:00:17,567: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:00:17,568: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:00:17,568: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:00:17,568: INFO: common]: created directory at: artifacts\model
+[2022-06-23 12:00:17,579: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 12:00:17,579: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 12:00:17,579: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 12:00:17,579: ERROR: stage_03_train]: 'n_jobs'
+Traceback (most recent call last):
+  File ".\src\stage_03_train.py", line 80, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_03_train.py", line 55, in main
+    n_jobs = params["train"]["n_jobs"]
+KeyError: 'n_jobs'
+[2022-06-23 12:00:38,989: INFO: stage_03_train]: 
+********************
+[2022-06-23 12:00:38,990: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 12:00:38,992: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:00:38,993: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:00:38,993: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:00:38,993: INFO: common]: created directory at: artifacts\model
+[2022-06-23 12:00:39,004: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 12:00:39,004: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 12:00:39,004: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 12:00:39,004: ERROR: stage_03_train]: 'n_jobs'
+Traceback (most recent call last):
+  File ".\src\stage_03_train.py", line 80, in <module>
+    main(config_path=parsed_args.config, params_path=parsed_args.params)
+  File ".\src\stage_03_train.py", line 55, in main
+    n_jobs = params["train"]["n_jobs"]
+KeyError: 'n_jobs'
+[2022-06-23 12:01:11,451: INFO: stage_03_train]: 
+********************
+[2022-06-23 12:01:11,451: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 12:01:11,453: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:01:11,454: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:01:11,454: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:01:11,454: INFO: common]: created directory at: artifacts\model
+[2022-06-23 12:01:11,464: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 12:01:11,465: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 12:01:11,465: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 12:01:13,928: INFO: stage_03_train]: Saved our model at: artifacts\model\model.pkl
+[2022-06-23 12:01:13,930: INFO: stage_03_train]: >>>>> stage STAGE_NAME completed!<<<<<
+
+[2022-06-23 12:04:06,006: INFO: stage_03_train]: 
+********************
+[2022-06-23 12:04:06,006: INFO: stage_03_train]: >>>>> stage STAGE_NAME started <<<<<
+[2022-06-23 12:04:06,009: INFO: common]: yaml file: configs/config.yaml loaded successfully
+[2022-06-23 12:04:06,013: INFO: common]: yaml file: params.yaml loaded successfully
+[2022-06-23 12:04:06,013: INFO: common]: created directory at: artifacts\features
+[2022-06-23 12:04:06,013: INFO: common]: created directory at: artifacts\model
+[2022-06-23 12:04:06,035: INFO: stage_03_train]: Input matrix size (17536, 2502)
+[2022-06-23 12:04:06,035: INFO: stage_03_train]: X matrix size :(17536, 2500)
+[2022-06-23 12:04:06,035: INFO: stage_03_train]: Y matrix size of labels: (17536,)
+[2022-06-23 12:04:08,998: INFO: stage_03_train]: Saved our model at: artifacts\model\model.pkl
+[2022-06-23 12:04:09,000: INFO: stage_03_train]: >>>>> stage STAGE_NAME completed!<<<<<
+

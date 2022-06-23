@@ -37,3 +37,18 @@ stages:
       md5: 8df1ec5273d81856f0974a258e8423c1.dir
       size: 12272570
       nfiles: 2
+  model_trainning:
+    cmd: python src/stage_03_train.py
+    deps:
+    - path: artifacts/features
+      md5: 8df1ec5273d81856f0974a258e8423c1.dir
+      size: 12272570
+      nfiles: 2
+    - path: src/stage_03_train.py
+      md5: 61a563eed1b0044192165f334b15afc1
+      size: 2667
+    outs:
+    - path: artifacts/model
+      md5: 762eeadafeba8d4d304048467dbc20be.dir
+      size: 3120261
+      nfiles: 1
