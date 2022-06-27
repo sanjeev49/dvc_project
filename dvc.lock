@@ -48,8 +48,8 @@ stages:
       size: 2665
     outs:
     - path: artifacts/model/model.pkl
-      md5: 4ecdabbec253420579cdfb00252e8a3e
-      size: 3121845
+      md5: ca59a1b5341987ebeb6b3f45db4d0fe7
+      size: 3147765
   evaluate:
     cmd: python src/stage_04_evaluate.py
     deps:
@@ -57,8 +57,8 @@ stages:
       md5: e007cda0c88638cb1c749368ed11e526
       size: 3713885
     - path: artifacts/model/model.pkl
-      md5: 4ecdabbec253420579cdfb00252e8a3e
-      size: 3121845
+      md5: ca59a1b5341987ebeb6b3f45db4d0fe7
+      size: 3147765
     - path: src/stage_04_evaluate.py
       md5: 9099b23d508ee25684a7246469b63903
       size: 3199
@@ -68,11 +68,11 @@ stages:
       nfiles: 6
     outs:
     - path: prc.json
-      md5: 9cf61e5edd3b64302c023f11717cec80
-      size: 139922
+      md5: df571abda6dc45b1452f5915fc7f9e01
+      size: 145121
     - path: roc.json
-      md5: 6a0e9a71db6ad49e58053ad379d62a60
-      size: 139290
+      md5: f66452bab33b95e02fa3b052283a4294
+      size: 127996
     - path: scores.json
-      md5: 57c793d1cc7f0d33da0d33dc11a09188
-      size: 75
+      md5: c19427541db4968b694cabe5e9c73c7d
+      size: 76
